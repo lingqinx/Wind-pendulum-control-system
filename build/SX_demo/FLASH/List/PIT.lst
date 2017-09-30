@@ -1,0 +1,381 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     22/Dec/2013  00:47:32 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\src\drivers\PIT\PIT.c                              #
+#    Command line =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\src\drivers\PIT\PIT.c -lCN                         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\FLASH\List\ -lB                      #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\FLASH\List\ -o                       #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\FLASH\Obj\ --no_cse --no_unroll      #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "E:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.0\arm\INC\c\DLib_Config_Nor #
+#                    mal.h" -I C:\Users\Administrator\Desktop\杨向军的K60模板 #
+#                    _只有基本IO操作\build\SX_demo\..\ -I                     #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\common\ -I                 #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\cpu\ -I                    #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\ -I                #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\gpio\ -I           #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\wdog\ -I           #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\mcg\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\uart\ -I           #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\lptmr\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\LED\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\fun\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\FTM\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\pit\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\DIPswitch\ -I      #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\steer\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\ccd\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\dma\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\drivers\motor\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\platforms\ -I              #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\projects\ -I               #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\..\..\src\projects\SX_demo\ -Ol      #
+#    List file    =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\FLASH\List\PIT.lst                   #
+#    Object file  =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\SX_demo\FLASH\Obj\PIT.o                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本IO操作\src\drivers\PIT\PIT.c
+      1          /*
+      2          ************************************************************************
+      3          *                北京邮电大学 K60 学习例程                                        
+      4          * 文件名 :[PIT.c] 
+      5          * 描  述 ：PIT周期中断计时器，定时中断
+      6          * 原创   ：野火嵌入式开发工作室
+      7          *设计改进：snowwolf
+      8          *  Email ：snowwolf2012@qq.com
+      9          *最后更新：2012-04-03
+     10          * 说  明 ：
+     11          ***********************************************************************
+     12          */
+     13          
+     14          
+     15          #include "common.h"
+     16          #include  "PIT.h"     //周期中断计时器
+     17          
+     18          /*************************************************************************
+     19          *  函数名称：pit_init
+     20          *  功能说明：PITn定时器初始化
+     21          *  参数说明：PITn        模块号（PIT0~PIT3）
+     22                       freq        频率（Hz）
+     23          *  函数返回：无
+     24          *  修改时间：2012-1-24
+     25          *  备    注：
+     26          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     27          void pit_init(PITn pitn,u32 freq)
+     28          {
+     29              //PIT 用的是 Bus Clock 总线频率
+     30              //溢出计数 = 总线频率 * 时间
+     31          
+     32              /* 开启时钟*/
+     33              SIM_SCGC6       |=SIM_SCGC6_PIT_MASK;                             //使能PIT时钟
+   \                     pit_init:
+   \   00000000   0x....             LDR.N    R2,??DataTable6  ;; 0x4004803c
+   \   00000002   0x6812             LDR      R2,[R2, #+0]
+   \   00000004   0xF452 0x0200      ORRS     R2,R2,#0x800000
+   \   00000008   0x....             LDR.N    R3,??DataTable6  ;; 0x4004803c
+   \   0000000A   0x601A             STR      R2,[R3, #+0]
+     34          
+     35              /* PIT模块控制 PIT Module Control Register (PIT_MCR) */
+     36              PIT_MCR         &=~(PIT_MCR_MDIS_MASK | PIT_MCR_FRZ_MASK );       //使能PIT定时器时钟 ，调试模式下继续运行
+   \   0000000C   0x....             LDR.N    R2,??DataTable6_1  ;; 0x40037000
+   \   0000000E   0x6812             LDR      R2,[R2, #+0]
+   \   00000010   0x0892             LSRS     R2,R2,#+2
+   \   00000012   0x0092             LSLS     R2,R2,#+2
+   \   00000014   0x....             LDR.N    R3,??DataTable6_1  ;; 0x40037000
+   \   00000016   0x601A             STR      R2,[R3, #+0]
+     37          
+     38              /* 定时器加载值设置 Timer Load Value Register (PIT_LDVALn) */
+     39              PIT_LDVAL(pitn)  = (bus_clk_khz*1000)/freq - 1 ;                                           //设置溢出中断时间
+   \   00000018   0x....             LDR.N    R2,??DataTable6_2
+   \   0000001A   0x6812             LDR      R2,[R2, #+0]
+   \   0000001C   0xF44F 0x737A      MOV      R3,#+1000
+   \   00000020   0x435A             MULS     R2,R3,R2
+   \   00000022   0xFBB2 0xF1F1      UDIV     R1,R2,R1
+   \   00000026   0x1E49             SUBS     R1,R1,#+1
+   \   00000028   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000002A   0x0102             LSLS     R2,R0,#+4
+   \   0000002C   0x....             LDR.N    R3,??DataTable6_3  ;; 0x40037100
+   \   0000002E   0x50D1             STR      R1,[R2, R3]
+     40          
+     41              //定时时间到了后，TIF 置 1 。写1的时候就会清0
+     42              PIT_Flag_Clear(pitn);                                             //清中断标志位
+   \   00000030   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000032   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   00000034   0xEB11 0x1100      ADDS     R1,R1,R0, LSL #+4
+   \   00000038   0x68C9             LDR      R1,[R1, #+12]
+   \   0000003A   0xF051 0x0101      ORRS     R1,R1,#0x1
+   \   0000003E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000040   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   00000042   0xEB12 0x1200      ADDS     R2,R2,R0, LSL #+4
+   \   00000046   0x60D1             STR      R1,[R2, #+12]
+     43          
+     44              /* 定时器控制寄存器 Timer Control Register (PIT_TCTRL0) */
+     45              PIT_TCTRL(pitn) |= PIT_TCTRL_TEN_MASK;
+   \   00000048   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000004A   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   0000004C   0xEB11 0x1100      ADDS     R1,R1,R0, LSL #+4
+   \   00000050   0x6889             LDR      R1,[R1, #+8]
+   \   00000052   0xF051 0x0101      ORRS     R1,R1,#0x1
+   \   00000056   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000058   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   0000005A   0xEB12 0x1000      ADDS     R0,R2,R0, LSL #+4
+   \   0000005E   0x6081             STR      R1,[R0, #+8]
+     46              		                                  
+     47          }
+   \   00000060   0x4770             BX       LR               ;; return
+     48          
+     49          /*************************************************************************
+     50          * 函数名称: PIT_Reload_Freq                                                    
+     51          * 函数返回: 计数器重新计数                                         
+     52          * 参数说明: pitn:表示pit通道号。        
+     53          * 功能概要: 设置相关寄存器的值 
+     54          *  修改时间：2012-3-24
+     55          *  备    注：要更改计数器值需要先关闭使能再改，再打开
+     56          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     57          void PIT_Reload_Freq(PITn pitn,u32 freq)
+     58          {
+     59              PIT_TCTRL(pitn) &= ~PIT_TCTRL_TEN_MASK;
+   \                     PIT_Reload_Freq:
+   \   00000000   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000002   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   00000004   0xEB12 0x1200      ADDS     R2,R2,R0, LSL #+4
+   \   00000008   0x6892             LDR      R2,[R2, #+8]
+   \   0000000A   0x0852             LSRS     R2,R2,#+1
+   \   0000000C   0x0052             LSLS     R2,R2,#+1
+   \   0000000E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000010   0x....             LDR.N    R3,??DataTable6_3  ;; 0x40037100
+   \   00000012   0xEB13 0x1300      ADDS     R3,R3,R0, LSL #+4
+   \   00000016   0x609A             STR      R2,[R3, #+8]
+     60              PIT_LDVAL(pitn)  = (bus_clk_khz*1000)/freq - 1 ;  
+   \   00000018   0x....             LDR.N    R2,??DataTable6_2
+   \   0000001A   0x6812             LDR      R2,[R2, #+0]
+   \   0000001C   0xF44F 0x737A      MOV      R3,#+1000
+   \   00000020   0x435A             MULS     R2,R3,R2
+   \   00000022   0xFBB2 0xF1F1      UDIV     R1,R2,R1
+   \   00000026   0x1E49             SUBS     R1,R1,#+1
+   \   00000028   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000002A   0x0102             LSLS     R2,R0,#+4
+   \   0000002C   0x....             LDR.N    R3,??DataTable6_3  ;; 0x40037100
+   \   0000002E   0x50D1             STR      R1,[R2, R3]
+     61              PIT_TCTRL(pitn) |= PIT_TCTRL_TEN_MASK;
+   \   00000030   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000032   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   00000034   0xEB11 0x1100      ADDS     R1,R1,R0, LSL #+4
+   \   00000038   0x6889             LDR      R1,[R1, #+8]
+   \   0000003A   0xF051 0x0101      ORRS     R1,R1,#0x1
+   \   0000003E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000040   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   00000042   0xEB12 0x1000      ADDS     R0,R2,R0, LSL #+4
+   \   00000046   0x6081             STR      R1,[R0, #+8]
+     62          }
+   \   00000048   0x4770             BX       LR               ;; return
+     63          
+     64          /*************************************************************************
+     65          * 函数名称: get_get_PITCNT                                                       
+     66          * 函数返回: 当前定时器剩余时间                                          
+     67          * 参数说明: pitn:表示pit通道号。        
+     68          * 功能概要: 设置相关寄存器的值 
+     69          *  修改时间：2012-3-24
+     70          *  备    注：ms返回ms,us返回us
+     71          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     72          uint32 get_PITCNTms(PITn pitn)
+     73          {
+     74              return PIT_CVAL(pitn)/bus_clk_khz;
+   \                     get_PITCNTms:
+   \   00000000   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000002   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   00000004   0xEB11 0x1000      ADDS     R0,R1,R0, LSL #+4
+   \   00000008   0x6840             LDR      R0,[R0, #+4]
+   \   0000000A   0x....             LDR.N    R1,??DataTable6_2
+   \   0000000C   0x6809             LDR      R1,[R1, #+0]
+   \   0000000E   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   00000012   0x4770             BX       LR               ;; return
+     75          }
+     76          
+
+   \                                 In section .text, align 2, keep-with-next
+     77          uint32 get_PITCNTus(PITn pitn)
+     78          {
+     79              return PIT_CVAL(pitn)/(bus_clk_khz/1000);
+   \                     get_PITCNTus:
+   \   00000000   0x....             LDR.N    R1,??DataTable6_2
+   \   00000002   0x6809             LDR      R1,[R1, #+0]
+   \   00000004   0xF44F 0x727A      MOV      R2,#+1000
+   \   00000008   0xFBB1 0xF1F2      UDIV     R1,R1,R2
+   \   0000000C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000E   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   00000010   0xEB12 0x1000      ADDS     R0,R2,R0, LSL #+4
+   \   00000014   0x6840             LDR      R0,[R0, #+4]
+   \   00000016   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   0000001A   0x4770             BX       LR               ;; return
+     80          }
+
+   \                                 In section .text, align 2, keep-with-next
+     81          uint32 get_PITCNTtick(PITn pitn)
+     82          {
+     83              return PIT_CVAL(pitn);
+   \                     get_PITCNTtick:
+   \   00000000   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000002   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   00000004   0xEB11 0x1000      ADDS     R0,R1,R0, LSL #+4
+   \   00000008   0x6840             LDR      R0,[R0, #+4]
+   \   0000000A   0x4770             BX       LR               ;; return
+     84          }
+     85          
+     86          /*************************************************************************
+     87          *  函数名称：pit_irq_EN
+     88          *  功能说明：PITn定时中断使能
+     89          *  参数说明：PITn        模块号（PIT0~PIT3）
+     90          *  函数返回：无
+     91          *  修改时间：2012-3-24
+     92          *  备    注：
+     93          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     94          void pit_irq_EN(PITn pitn)
+     95          {
+   \                     pit_irq_EN:
+   \   00000000   0xB580             PUSH     {R7,LR}
+     96               PIT_TCTRL(pitn) |= PIT_TCTRL_TIE_MASK;    //使能 PITn定时器,并开PITn中断  
+   \   00000002   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000004   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   00000006   0xEB11 0x1100      ADDS     R1,R1,R0, LSL #+4
+   \   0000000A   0x6889             LDR      R1,[R1, #+8]
+   \   0000000C   0xF051 0x0102      ORRS     R1,R1,#0x2
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   00000014   0xEB12 0x1200      ADDS     R2,R2,R0, LSL #+4
+   \   00000018   0x6091             STR      R1,[R2, #+8]
+     97               enable_irq(pitn+68);                      //开接收引脚的IRQ中断
+   \   0000001A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000001C   0x3044             ADDS     R0,R0,#+68
+   \   0000001E   0x.... 0x....      BL       enable_irq
+     98          }
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+     99          
+    100          /*************************************************************************
+    101          *  函数名称：pit_irq_DIS
+    102          *  功能说明：PITn定时中断关闭
+    103          *  参数说明：PITn        模块号（PIT0~PIT3）
+    104          *  函数返回：无
+    105          *  修改时间：2012-3-24
+    106          *  备    注：
+    107          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    108          void pit_irq_DIS(PITn pitn)
+    109          {
+   \                     pit_irq_DIS:
+   \   00000000   0xB580             PUSH     {R7,LR}
+    110               PIT_TCTRL(pitn) &= ~PIT_TCTRL_TIE_MASK;    //关 PITn定时器, 
+   \   00000002   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000004   0x....             LDR.N    R1,??DataTable6_3  ;; 0x40037100
+   \   00000006   0xEB11 0x1100      ADDS     R1,R1,R0, LSL #+4
+   \   0000000A   0x6889             LDR      R1,[R1, #+8]
+   \   0000000C   0xF031 0x0102      BICS     R1,R1,#0x2
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0x....             LDR.N    R2,??DataTable6_3  ;; 0x40037100
+   \   00000014   0xEB12 0x1200      ADDS     R2,R2,R0, LSL #+4
+   \   00000018   0x6091             STR      R1,[R2, #+8]
+    111               disable_irq(pitn+68);                      //关IRQ中断
+   \   0000001A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000001C   0x3044             ADDS     R0,R0,#+68
+   \   0000001E   0x.... 0x....      BL       disable_irq
+    112          }
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x4004803C         DC32     0x4004803c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \   00000000   0x40037000         DC32     0x40037000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \   00000000   0x........         DC32     bus_clk_khz
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \   00000000   0x40037100         DC32     0x40037100
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+        0  PIT_Reload_Freq
+        0  get_PITCNTms
+        0  get_PITCNTtick
+        0  get_PITCNTus
+        0  pit_init
+        8  pit_irq_DIS
+             8 -> disable_irq
+        8  pit_irq_EN
+             8 -> enable_irq
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+      74  PIT_Reload_Freq
+      20  get_PITCNTms
+      12  get_PITCNTtick
+      28  get_PITCNTus
+      98  pit_init
+      36  pit_irq_DIS
+      36  pit_irq_EN
+
+ 
+ 320 bytes in section .text
+ 
+ 320 bytes of CODE memory
+
+Errors: none
+Warnings: none

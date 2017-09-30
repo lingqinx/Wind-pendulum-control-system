@@ -1,0 +1,193 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     04/Apr/2012  14:12:18 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\workspace\myworkspace\SW_K60\src\drivers\laser\laser. #
+#                    c                                                        #
+#    Command line =  D:\workspace\myworkspace\SW_K60\src\drivers\laser\laser. #
+#                    c -lCN D:\workspace\myworkspace\SW_K60\build\GD_demo\FLA #
+#                    SH\List\ -lB D:\workspace\myworkspace\SW_K60\build\GD_de #
+#                    mo\FLASH\List\ -o D:\workspace\myworkspace\SW_K60\build\ #
+#                    GD_demo\FLASH\Obj\ --no_cse --no_unroll --no_inline      #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "C:\Program Files\IAR        #
+#                    Systems\Embedded Workbench 6.0_3\arm\INC\c\DLib_Config_N #
+#                    ormal.h" -I D:\workspace\myworkspace\SW_K60\build\GD_dem #
+#                    o\..\ -I D:\workspace\myworkspace\SW_K60\build\GD_demo\. #
+#                    .\..\src\common\ -I D:\workspace\myworkspace\SW_K60\buil #
+#                    d\GD_demo\..\..\src\cpu\ -I                              #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\ -I D:\workspace\myworkspace\SW_K60\build\GD_dem #
+#                    o\..\..\src\drivers\gpio\ -I                             #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\wdog\ -I D:\workspace\myworkspace\SW_K60\build\G #
+#                    D_demo\..\..\src\drivers\mcg\ -I                         #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\uart\ -I D:\workspace\myworkspace\SW_K60\build\G #
+#                    D_demo\..\..\src\drivers\lptmr\ -I                       #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\LED\ -I D:\workspace\myworkspace\SW_K60\build\GD #
+#                    _demo\..\..\src\drivers\fun\ -I                          #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\FTM\ -I D:\workspace\myworkspace\SW_K60\build\GD #
+#                    _demo\..\..\src\drivers\pit\ -I                          #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\DIPswitch\ -I D:\workspace\myworkspace\SW_K60\bu #
+#                    ild\GD_demo\..\..\src\drivers\steer\ -I                  #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\motor\ -I D:\workspace\myworkspace\SW_K60\build\ #
+#                    GD_demo\..\..\src\drivers\laser\ -I                      #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    platforms\ -I D:\workspace\myworkspace\SW_K60\build\GD_d #
+#                    emo\..\..\src\projects\ -I D:\workspace\myworkspace\SW_K #
+#                    60\build\GD_demo\..\..\src\projects\GD_demo\ -Ol         #
+#    List file    =  D:\workspace\myworkspace\SW_K60\build\GD_demo\FLASH\List #
+#                    \laser.lst                                               #
+#    Object file  =  D:\workspace\myworkspace\SW_K60\build\GD_demo\FLASH\Obj\ #
+#                    laser.o                                                  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\workspace\myworkspace\SW_K60\src\drivers\laser\laser.c
+      1          /*
+      2          ************************************************************************
+      3          *                北京邮电大学 K60 学习例程                                        
+      4          * 文件名 :[laser.c] 
+      5          * 描  述 ：激光驱动程序
+      6          *设计改进：snowwolf
+      7          *  Email ：snowwolf2012@qq.com
+      8          * 说  明 ：激光 驱动程序
+      9          ***********************************************************************
+     10          */
+     11          #include "laser.h"
+     12          
+     13          
+     14          /*************************************************************************
+     15          *  函数名称：LASER_init
+     16          *  功能说明：初始化激光端口，设置IO口为输出方向
+     17          *  参数说明：无
+     18          *  函数返回：无
+     19          *  修改时间：2012-2-2   已测试
+     20          *  备    注：
+     21          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     22          void    LASER_init(void)
+     23          {
+   \                     LASER_init:
+   \   00000000   0xB580             PUSH     {R7,LR}
+     24              gpio_init(LASER_PORT,LASERbit0,GPO,0);
+   \   00000002   0x2300             MOVS     R3,#+0
+   \   00000004   0x2201             MOVS     R2,#+1
+   \   00000006   0x2101             MOVS     R1,#+1
+   \   00000008   0x2003             MOVS     R0,#+3
+   \   0000000A   0x.... 0x....      BL       gpio_init
+     25              gpio_init(LASER_PORT,LASERbit1,GPO,0);
+   \   0000000E   0x2300             MOVS     R3,#+0
+   \   00000010   0x2201             MOVS     R2,#+1
+   \   00000012   0x2102             MOVS     R1,#+2
+   \   00000014   0x2003             MOVS     R0,#+3
+   \   00000016   0x.... 0x....      BL       gpio_init
+     26              gpio_init(LASER_PORT,LASERbit2,GPO,0);
+   \   0000001A   0x2300             MOVS     R3,#+0
+   \   0000001C   0x2201             MOVS     R2,#+1
+   \   0000001E   0x2103             MOVS     R1,#+3
+   \   00000020   0x2003             MOVS     R0,#+3
+   \   00000022   0x.... 0x....      BL       gpio_init
+     27              //初始化接收管端口
+     28              LASER_RECV_init();
+   \   00000026   0x.... 0x....      BL       LASER_RECV_init
+     29              //18kPWM
+     30              FTM_PWM_init(LASER_SIG_FTMN,LASER_SIG_FTMCH0,LASER_SIG_FREQ,LASER_SIG_INIT_VAL); 
+   \   0000002A   0xF241 0x3388      MOVW     R3,#+5000
+   \   0000002E   0x....             LDR.N    R2,??DataTable0  ;; 0x2bf20
+   \   00000030   0x2100             MOVS     R1,#+0
+   \   00000032   0x2002             MOVS     R0,#+2
+   \   00000034   0x.... 0x....      BL       FTM_PWM_init
+     31              FTM_PWM_init(LASER_SIG_FTMN,LASER_SIG_FTMCH1,LASER_SIG_FREQ,LASER_SIG_INIT_VAL); 
+   \   00000038   0xF241 0x3388      MOVW     R3,#+5000
+   \   0000003C   0x....             LDR.N    R2,??DataTable0  ;; 0x2bf20
+   \   0000003E   0x2101             MOVS     R1,#+1
+   \   00000040   0x2002             MOVS     R0,#+2
+   \   00000042   0x.... 0x....      BL       FTM_PWM_init
+     32          }
+   \   00000046   0xBD01             POP      {R0,PC}          ;; return
+     33          
+     34          
+     35          /*************************************************************************
+     36          *  函数名称：LASER_recv_init
+     37          *  功能说明：初始化接收管端口，设置IO口为输入方向
+     38          *  参数说明：无
+     39          *  函数返回：无
+     40          *  修改时间：2012-2-2   已测试
+     41          *  备    注：
+     42          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     43          void    LASER_RECV_init(void)
+     44          {
+   \                     LASER_RECV_init:
+   \   00000000   0xB580             PUSH     {R7,LR}
+     45              gpio_init(LASER_RECV_PORT,LASER_RECV_bit0,GPI,0);
+   \   00000002   0x2300             MOVS     R3,#+0
+   \   00000004   0x2200             MOVS     R2,#+0
+   \   00000006   0x2104             MOVS     R1,#+4
+   \   00000008   0x2003             MOVS     R0,#+3
+   \   0000000A   0x.... 0x....      BL       gpio_init
+     46              gpio_init(LASER_RECV_PORT,LASER_RECV_bit1,GPI,0);
+   \   0000000E   0x2300             MOVS     R3,#+0
+   \   00000010   0x2200             MOVS     R2,#+0
+   \   00000012   0x2105             MOVS     R1,#+5
+   \   00000014   0x2003             MOVS     R0,#+3
+   \   00000016   0x.... 0x....      BL       gpio_init
+     47              gpio_init(LASER_RECV_PORT,LASER_RECV_bit2,GPI,0);
+   \   0000001A   0x2300             MOVS     R3,#+0
+   \   0000001C   0x2200             MOVS     R2,#+0
+   \   0000001E   0x2106             MOVS     R1,#+6
+   \   00000020   0x2003             MOVS     R0,#+3
+   \   00000022   0x.... 0x....      BL       gpio_init
+     48              gpio_init(LASER_RECV_PORT,LASER_RECV_bit3,GPI,0);
+   \   00000026   0x2300             MOVS     R3,#+0
+   \   00000028   0x2200             MOVS     R2,#+0
+   \   0000002A   0x2107             MOVS     R1,#+7
+   \   0000002C   0x2003             MOVS     R0,#+3
+   \   0000002E   0x.... 0x....      BL       gpio_init
+     49          }
+   \   00000032   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x0002BF20         DC32     0x2bf20
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+        8  LASER_RECV_init
+             8 -> gpio_init
+        8  LASER_init
+             8 -> FTM_PWM_init
+             8 -> LASER_RECV_init
+             8 -> gpio_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+      52  LASER_RECV_init
+      72  LASER_init
+
+ 
+ 128 bytes in section .text
+ 
+ 128 bytes of CODE memory
+
+Errors: none
+Warnings: none

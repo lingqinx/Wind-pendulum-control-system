@@ -1,0 +1,157 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     03/Apr/2012  19:01:43 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  D:\workspace\myworkspace\SW_K60\src\drivers\exti\exti.c  #
+#    Command line =  D:\workspace\myworkspace\SW_K60\src\drivers\exti\exti.c  #
+#                    -lCN D:\workspace\myworkspace\SW_K60\build\GD_demo\RAM\L #
+#                    ist\ -lB D:\workspace\myworkspace\SW_K60\build\GD_demo\R #
+#                    AM\List\ -o D:\workspace\myworkspace\SW_K60\build\GD_dem #
+#                    o\RAM\Obj\ --no_cse --no_unroll --no_inline              #
+#                    --no_code_motion --no_tbaa --no_clustering               #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "C:\Program Files\IAR        #
+#                    Systems\Embedded Workbench 6.0_3\arm\INC\c\DLib_Config_N #
+#                    ormal.h" -I D:\workspace\myworkspace\SW_K60\build\GD_dem #
+#                    o\..\ -I D:\workspace\myworkspace\SW_K60\build\GD_demo\. #
+#                    .\..\src\common\ -I D:\workspace\myworkspace\SW_K60\buil #
+#                    d\GD_demo\..\..\src\cpu\ -I                              #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\ -I D:\workspace\myworkspace\SW_K60\build\GD_dem #
+#                    o\..\..\src\drivers\gpio\ -I                             #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\wdog\ -I D:\workspace\myworkspace\SW_K60\build\G #
+#                    D_demo\..\..\src\drivers\mcg\ -I                         #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\uart\ -I D:\workspace\myworkspace\SW_K60\build\G #
+#                    D_demo\..\..\src\drivers\lptmr\ -I                       #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\exti\ -I D:\workspace\myworkspace\SW_K60\build\G #
+#                    D_demo\..\..\src\drivers\LED\ -I                         #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\fun\ -I D:\workspace\myworkspace\SW_K60\build\GD #
+#                    _demo\..\..\src\drivers\pit\ -I                          #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    drivers\ftm\ -I D:\workspace\myworkspace\SW_K60\build\GD #
+#                    _demo\..\..\src\platforms\ -I                            #
+#                    D:\workspace\myworkspace\SW_K60\build\GD_demo\..\..\src\ #
+#                    projects\ -I D:\workspace\myworkspace\SW_K60\build\GD_de #
+#                    mo\..\..\src\projects\GD_demo\ -Ol                       #
+#    List file    =  D:\workspace\myworkspace\SW_K60\build\GD_demo\RAM\List\e #
+#                    xti.lst                                                  #
+#    Object file  =  D:\workspace\myworkspace\SW_K60\build\GD_demo\RAM\Obj\ex #
+#                    ti.o                                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\workspace\myworkspace\SW_K60\src\drivers\exti\exti.c
+      1          /******************** (C) COPYRIGHT 2011 野火嵌入式开发工作室 ********************
+      2           * 文件名       ：exti.c
+      3           * 描述         ：EXTI外部GPIO中断例程
+      4           *          
+      5           * 实验平台     ：野火kinetis开发板
+      6           * 库版本       ：
+      7           * 嵌入系统     ：
+      8           * 
+      9           * 作者         ：野火嵌入式开发工作室 
+     10           * 淘宝店       ：http://firestm32.taobao.com
+     11           * 技术支持论坛 ：http://www.ourdev.cn/bbs/bbs_list.jsp?bbs_id=1008   
+     12          **********************************************************************************/	
+     13          
+     14          #include "common.h"
+     15          #include "gpio.h"
+     16          #include "exti.h"   
+     17          
+     18          
+     19          
+     20          /*************************************************************************
+     21          *                             野火嵌入式开发工作室
+     22          *  
+     23          *  函数名称：exti_init
+     24          *  功能说明：EXTI外部GPIO中断初始化
+     25          *  参数说明：PORTx       端口号（PORTA,PORTB,PORTC,PORTD,PORTE）
+     26          *            n           端口引脚
+     27          *            exti_cfg    触发选项和上拉下拉选项
+     28          *  函数返回：无
+     29          *  修改时间：2012-1-20
+     30          *  备    注：
+     31          *************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+     32          void  exti_init(PORTx portx, u8 n,exti_cfg cfg)
+     33          {
+   \                     exti_init:
+   \   00000000   0xB510             PUSH     {R4,LR}
+     34              
+     35              SIM_SCGC5 |= (SIM_SCGC5_PORTA_MASK<<portx);      //开启PORTx端口
+   \   00000002   0x4B16             LDR.N    R3,??exti_init_0  ;; 0x40048038
+   \   00000004   0x681B             LDR      R3,[R3, #+0]
+   \   00000006   0xF44F 0x7400      MOV      R4,#+512
+   \   0000000A   0x4084             LSLS     R4,R4,R0
+   \   0000000C   0x4323             ORRS     R3,R4,R3
+   \   0000000E   0x4C13             LDR.N    R4,??exti_init_0  ;; 0x40048038
+   \   00000010   0x6023             STR      R3,[R4, #+0]
+     36              
+     37              PORT_PCR_REG(PORTX[portx],n)= PORT_PCR_MUX(1)| PORT_PCR_IRQC(cfg & 0x7f ) | PORT_PCR_PE_MASK | ((cfg & 0x80 )>>7);   // 复用GPIO , 确定触发模式 ,开启上拉或下拉电阻
+   \   00000012   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000014   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000016   0x4B12             LDR.N    R3,??exti_init_0+0x4
+   \   00000018   0xF853 0x3020      LDR      R3,[R3, R0, LSL #+2]
+   \   0000001C   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   0000001E   0x0414             LSLS     R4,R2,#+16
+   \   00000020   0xF414 0x2470      ANDS     R4,R4,#0xF0000
+   \   00000024   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000026   0x09D2             LSRS     R2,R2,#+7
+   \   00000028   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   0000002A   0x4322             ORRS     R2,R2,R4
+   \   0000002C   0xF452 0x7281      ORRS     R2,R2,#0x102
+   \   00000030   0xF843 0x2021      STR      R2,[R3, R1, LSL #+2]
+     38              GPIO_PDDR_REG(GPIOx[portx])&=~(1<<n);           //输入模式
+   \   00000034   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000036   0x4A0B             LDR.N    R2,??exti_init_0+0x8
+   \   00000038   0xF852 0x2020      LDR      R2,[R2, R0, LSL #+2]
+   \   0000003C   0x6952             LDR      R2,[R2, #+20]
+   \   0000003E   0x2301             MOVS     R3,#+1
+   \   00000040   0xFA13 0xF101      LSLS     R1,R3,R1
+   \   00000044   0xEA32 0x0101      BICS     R1,R2,R1
+   \   00000048   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000004A   0x4A06             LDR.N    R2,??exti_init_0+0x8
+   \   0000004C   0xF852 0x2020      LDR      R2,[R2, R0, LSL #+2]
+   \   00000050   0x6151             STR      R1,[R2, #+20]
+     39                 
+     40              enable_irq(portx+87);                           //使能PORT中断，PORTA的ISR中断号为87
+   \   00000052   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000054   0x3057             ADDS     R0,R0,#+87
+   \   00000056   0x.... 0x....      BL       enable_irq
+     41          }
+   \   0000005A   0xBD10             POP      {R4,PC}          ;; return
+   \                     ??exti_init_0:
+   \   0000005C   0x40048038         DC32     0x40048038
+   \   00000060   0x........         DC32     PORTX
+   \   00000064   0x........         DC32     GPIOx
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+        8  exti_init
+             8 -> enable_irq
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     104  exti_init
+
+ 
+ 104 bytes in section .text
+ 
+ 104 bytes of CODE memory
+
+Errors: none
+Warnings: none

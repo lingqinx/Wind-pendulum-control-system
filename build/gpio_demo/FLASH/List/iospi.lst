@@ -1,0 +1,284 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.60.1.5097/W32 for ARM      15/Aug/2015  12:46:27 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\i #
+#                    ospi\iospi.c                                             #
+#    Command line =  C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\i #
+#                    ospi\iospi.c -lCN C:\Users\Administrator\Desktop\MPU6050 #
+#                    8.12\build\gpio_demo\FLASH\List\ -lB                     #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\List\ -o C:\Users\Administrator\Desktop\MPU6050 #
+#                    8.12\build\gpio_demo\FLASH\Obj\ --no_cse --no_unroll     #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "D:\IAR Systems\Embedded     #
+#                    Workbench 6.5\arm\INC\c\DLib_Config_Normal.h" -I         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\ -I C:\Users\Administrator\Desktop\MPU60508.12\bui #
+#                    ld\gpio_demo\..\..\src\common\ -I                        #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\cpu\ -I C:\Users\Administrator\Desktop\MPU6 #
+#                    0508.12\build\gpio_demo\..\..\src\drivers\ -I            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\gpio\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\flash\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\olcd\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\diskio\ -I                          #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\iospi\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\wdog\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\mcg\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\flash\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\uart\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\lptmr\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\LED\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\fun\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\FTM\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\pit\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\DIPswitch\ -I                       #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\steer\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\motor\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\laser\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\i2c\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\ADdevice\ -I                        #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\adc\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\serial_digtal_scope\ -I             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\MMA845x\ -I                         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\exti\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\dma\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\platforms\ -I C:\Users\Administrator\Deskto #
+#                    p\MPU60508.12\build\gpio_demo\..\..\src\projects\ -I     #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\projects\gpio_demo\ -I                      #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\MPU6050\ -I                         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\steer\ -Ol                          #
+#    List file    =  C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\List\iospi.lst                                  #
+#    Object file  =  C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\Obj\iospi.o                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\iospi\iospi.c
+      1          /*
+      2          ************************************************************************
+      3          *                北京邮电大学 K60 学习例程                                        
+      4          * 文件名 :[iospi.c] 
+      5          * 描  述 ：IO口实现SPI
+      6          *设计改进：snowwolf
+      7          *  Email ：snowwolf2012@qq.com
+      8          * 说  明 ：基本功能函数
+      9          ***********************************************************************
+     10          */
+     11          #include "iospi.h"
+     12          
+     13          #define SPI_NOP asm("nop")
+
+   \                                 In section .text, align 4, keep-with-next
+     14          void IOSPI_LCD_WrDat(byte data)
+     15          {
+     16              byte i=8;
+   \                     IOSPI_LCD_WrDat: (+1)
+   \   00000000   0x2108             MOVS     R1,#+8
+     17              //LCD_CS=0;;
+     18              SPI_DC = 1;
+   \   00000002   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000004   0x6812             LDR      R2,[R2, #+0]
+   \   00000006   0xF452 0x2280      ORRS     R2,R2,#0x40000
+   \   0000000A   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   0000000C   0x601A             STR      R2,[R3, #+0]
+     19              SPI_NOP;
+   \   0000000E   0xBF00             nop
+     20              SPI_SCLK = 0;
+   \   00000010   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000012   0x6812             LDR      R2,[R2, #+0]
+   \   00000014   0xF432 0x5280      BICS     R2,R2,#0x1000
+   \   00000018   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   0000001A   0x601A             STR      R2,[R3, #+0]
+     21              SPI_NOP;  
+   \   0000001C   0xBF00             nop
+   \   0000001E   0xE013             B.N      ??IOSPI_LCD_WrDat_0
+     22              
+     23              while(i--)
+     24              {
+     25                  if(data&0x80)
+     26                    SPI_MOSI = 1;
+     27                  else
+     28                    SPI_MOSI = 0;
+   \                     ??IOSPI_LCD_WrDat_1: (+1)
+   \   00000020   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000022   0x6812             LDR      R2,[R2, #+0]
+   \   00000024   0xF432 0x4280      BICS     R2,R2,#0x4000
+   \   00000028   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   0000002A   0x601A             STR      R2,[R3, #+0]
+     29                  
+     30                  SPI_SCLK = 1; 
+   \                     ??IOSPI_LCD_WrDat_2: (+1)
+   \   0000002C   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   0000002E   0x6812             LDR      R2,[R2, #+0]
+   \   00000030   0xF452 0x5280      ORRS     R2,R2,#0x1000
+   \   00000034   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000036   0x601A             STR      R2,[R3, #+0]
+     31                  SPI_NOP;       
+   \   00000038   0xBF00             nop
+     32                  SPI_SCLK = 0;  
+   \   0000003A   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   0000003C   0x6812             LDR      R2,[R2, #+0]
+   \   0000003E   0xF432 0x5280      BICS     R2,R2,#0x1000
+   \   00000042   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000044   0x601A             STR      R2,[R3, #+0]
+     33                  
+     34                  data<<=1;    
+   \   00000046   0x0040             LSLS     R0,R0,#+1
+   \                     ??IOSPI_LCD_WrDat_0: (+1)
+   \   00000048   0x000A             MOVS     R2,R1
+   \   0000004A   0x1E51             SUBS     R1,R2,#+1
+   \   0000004C   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   0000004E   0x2A00             CMP      R2,#+0
+   \   00000050   0xD008             BEQ.N    ??IOSPI_LCD_WrDat_3
+   \   00000052   0x0602             LSLS     R2,R0,#+24
+   \   00000054   0xD5E4             BPL.N    ??IOSPI_LCD_WrDat_1
+   \   00000056   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000058   0x6812             LDR      R2,[R2, #+0]
+   \   0000005A   0xF452 0x4280      ORRS     R2,R2,#0x4000
+   \   0000005E   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000060   0x601A             STR      R2,[R3, #+0]
+   \   00000062   0xE7E3             B.N      ??IOSPI_LCD_WrDat_2
+     35              }
+     36              //LCD_CS=1;
+     37          }
+   \                     ??IOSPI_LCD_WrDat_3: (+1)
+   \   00000064   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+     38          void IOSPI_LCD_WrCmd(byte cmd)
+     39          {
+     40              byte i=8;
+   \                     IOSPI_LCD_WrCmd: (+1)
+   \   00000000   0x2108             MOVS     R1,#+8
+     41              
+     42              //LCD_CS=0;;
+     43              SPI_DC = 0;
+   \   00000002   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000004   0x6812             LDR      R2,[R2, #+0]
+   \   00000006   0xF432 0x2280      BICS     R2,R2,#0x40000
+   \   0000000A   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   0000000C   0x601A             STR      R2,[R3, #+0]
+     44              SPI_SCLK = 0;
+   \   0000000E   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000010   0x6812             LDR      R2,[R2, #+0]
+   \   00000012   0xF432 0x5280      BICS     R2,R2,#0x1000
+   \   00000016   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000018   0x601A             STR      R2,[R3, #+0]
+     45              SPI_NOP;
+   \   0000001A   0xBF00             nop
+   \   0000001C   0xE013             B.N      ??IOSPI_LCD_WrCmd_0
+     46              
+     47              while(i--)
+     48              {
+     49                  if(cmd&0x80)
+     50                    SPI_MOSI = 1;
+     51                  else
+     52                    SPI_MOSI = 0;
+   \                     ??IOSPI_LCD_WrCmd_1: (+1)
+   \   0000001E   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000020   0x6812             LDR      R2,[R2, #+0]
+   \   00000022   0xF432 0x4280      BICS     R2,R2,#0x4000
+   \   00000026   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000028   0x601A             STR      R2,[R3, #+0]
+     53                  
+     54                  SPI_SCLK = 1;
+   \                     ??IOSPI_LCD_WrCmd_2: (+1)
+   \   0000002A   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   0000002C   0x6812             LDR      R2,[R2, #+0]
+   \   0000002E   0xF452 0x5280      ORRS     R2,R2,#0x1000
+   \   00000032   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000034   0x601A             STR      R2,[R3, #+0]
+     55                  SPI_NOP;     
+   \   00000036   0xBF00             nop
+     56                  SPI_SCLK = 0; 
+   \   00000038   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   0000003A   0x6812             LDR      R2,[R2, #+0]
+   \   0000003C   0xF432 0x5280      BICS     R2,R2,#0x1000
+   \   00000040   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   00000042   0x601A             STR      R2,[R3, #+0]
+     57                  cmd<<=1;
+   \   00000044   0x0040             LSLS     R0,R0,#+1
+   \                     ??IOSPI_LCD_WrCmd_0: (+1)
+   \   00000046   0x000A             MOVS     R2,R1
+   \   00000048   0x1E51             SUBS     R1,R2,#+1
+   \   0000004A   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   0000004C   0x2A00             CMP      R2,#+0
+   \   0000004E   0xD008             BEQ.N    ??IOSPI_LCD_WrCmd_3
+   \   00000050   0x0602             LSLS     R2,R0,#+24
+   \   00000052   0xD5E4             BPL.N    ??IOSPI_LCD_WrCmd_1
+   \   00000054   0x....             LDR.N    R2,??DataTable1  ;; 0x400ff080
+   \   00000056   0x6812             LDR      R2,[R2, #+0]
+   \   00000058   0xF452 0x4280      ORRS     R2,R2,#0x4000
+   \   0000005C   0x....             LDR.N    R3,??DataTable1  ;; 0x400ff080
+   \   0000005E   0x601A             STR      R2,[R3, #+0]
+   \   00000060   0xE7E3             B.N      ??IOSPI_LCD_WrCmd_2
+     58              } 	
+     59              //LCD_CS=1;
+     60          }
+   \                     ??IOSPI_LCD_WrCmd_3: (+1)
+   \   00000062   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x400FF080         DC32     0x400ff080
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   IOSPI_LCD_WrCmd
+       0   IOSPI_LCD_WrDat
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+     100  IOSPI_LCD_WrCmd
+     102  IOSPI_LCD_WrDat
+
+ 
+ 206 bytes in section .text
+ 
+ 206 bytes of CODE memory
+
+Errors: none
+Warnings: none

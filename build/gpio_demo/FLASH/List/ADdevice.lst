@@ -1,0 +1,199 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.60.1.5097/W32 for ARM      15/Aug/2015  12:46:18 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\A #
+#                    Ddevice\ADdevice.c                                       #
+#    Command line =  C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\A #
+#                    Ddevice\ADdevice.c -lCN C:\Users\Administrator\Desktop\M #
+#                    PU60508.12\build\gpio_demo\FLASH\List\ -lB               #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\List\ -o C:\Users\Administrator\Desktop\MPU6050 #
+#                    8.12\build\gpio_demo\FLASH\Obj\ --no_cse --no_unroll     #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "D:\IAR Systems\Embedded     #
+#                    Workbench 6.5\arm\INC\c\DLib_Config_Normal.h" -I         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\ -I C:\Users\Administrator\Desktop\MPU60508.12\bui #
+#                    ld\gpio_demo\..\..\src\common\ -I                        #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\cpu\ -I C:\Users\Administrator\Desktop\MPU6 #
+#                    0508.12\build\gpio_demo\..\..\src\drivers\ -I            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\gpio\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\flash\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\olcd\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\diskio\ -I                          #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\iospi\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\wdog\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\mcg\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\flash\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\uart\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\lptmr\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\LED\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\fun\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\FTM\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\pit\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\DIPswitch\ -I                       #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\steer\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\motor\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\laser\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\i2c\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\ADdevice\ -I                        #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\adc\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\serial_digtal_scope\ -I             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\MMA845x\ -I                         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\exti\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\dma\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\platforms\ -I C:\Users\Administrator\Deskto #
+#                    p\MPU60508.12\build\gpio_demo\..\..\src\projects\ -I     #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\projects\gpio_demo\ -I                      #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\MPU6050\ -I                         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\steer\ -Ol                          #
+#    List file    =  C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\List\ADdevice.lst                               #
+#    Object file  =  C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\Obj\ADdevice.o                                  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\ADdevice\ADdevice.c
+      1          /*
+      2          ************************************************************************
+      3          *                北京邮电大学 K60 学习例程
+      4          * 文件名 :[ADdevice.c]
+      5          * 描  述 ：AD设备 函数定义
+      6          *设计改进：依米
+      7          * 说  明 ：AD设备 函数定义
+      8          ***********************************************************************
+      9          */
+     10          
+     11          #include "ADdevice.h"
+     12          
+     13          /*************************************************************************
+     14          *  函数名称：ADdevice_init
+     15          *  功能说明：AD设备初始化函数
+     16          *  参数说明：
+     17          *  函数返回：无
+     18          *  修改时间：2012-2-14
+     19          *  备    注：根据需要进行初始化AD通道
+     20          *************************************************************************/
+     21          
+
+   \                                 In section .text, align 2, keep-with-next
+     22          void ADdevice_init()
+     23          {
+   \                     ADdevice_init: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     24              //ENC 03 初始化  PE3
+     25              adc_init(ENC_AD,ENC_X_CH);
+   \   00000002   0x2107             MOVS     R1,#+7
+   \   00000004   0x2001             MOVS     R0,#+1
+   \   00000006   0x.... 0x....      BL       adc_init
+     26          
+     27          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+     28          
+     29          /*************************************************************************
+     30          *  函数名称：Get_ADval
+     31          *  功能说明：获取AD值
+     32          *  参数说明：ADCn adcn  AD模块号
+     33                       ADC_Ch ch 通道号
+     34          
+     35          *  函数返回：无
+     36          *  修改时间：2012-2-14
+     37          *  备    注： 精度由  ADBITS 设置           这里设置为12bit即：
+     38                        进行 AD_TIMES 次转换求平均
+     39          *************************************************************************/
+     40          //获取陀螺仪（ENC）的返回值,我觉得采集速度实际测一下吧
+     41          
+
+   \                                 In section .text, align 2, keep-with-next
+     42          u16 get_ADval(ADCn adcn,ADC_Ch ch)
+     43          {
+   \                     get_ADval: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     44            return ad_ave(adcn,ch,ADBITS,AD_TIMES);
+   \   00000002   0x2332             MOVS     R3,#+50
+   \   00000004   0x2201             MOVS     R2,#+1
+   \   00000006   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000008   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000A   0x.... 0x....      BL       ad_ave
+   \   0000000E   0xBD02             POP      {R1,PC}          ;; return
+     45          }
+     46          
+
+   \                                 In section .text, align 2, keep-with-next
+     47          u16 Get_ADval_L(ADCn adcn,ADC_Ch ch)
+     48          {
+   \                     Get_ADval_L: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     49            return ad_ave(adcn,ch,ADBITS_L,AD_TIMES_L);
+   \   00000002   0x2364             MOVS     R3,#+100
+   \   00000004   0x2202             MOVS     R2,#+2
+   \   00000006   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000008   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000A   0x.... 0x....      BL       ad_ave
+   \   0000000E   0xBD02             POP      {R1,PC}          ;; return
+     50          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   ADdevice_init
+         8   -> adc_init
+       8   Get_ADval_L
+         8   -> ad_ave
+       8   get_ADval
+         8   -> ad_ave
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ADdevice_init
+      16  Get_ADval_L
+      16  get_ADval
+
+ 
+ 44 bytes in section .text
+ 
+ 44 bytes of CODE memory
+
+Errors: none
+Warnings: none

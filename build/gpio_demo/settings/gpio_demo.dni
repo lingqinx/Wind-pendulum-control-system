@@ -1,0 +1,78 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=440609634
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[JLinkDriver]
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+CStepIntDis=_ 0
+[Breakpoints]
+Count=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Trace1]
+Enabled=0
+ShowSource=1
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "C:\Users\Administrator\Desktop\模拟51167.7\模拟5116测试23\src\projects\gpio_demo\main.c" ""
+A1=_ "C:\Users\Administrator\Desktop\模拟5116测试23\src\projects\gpio_demo\main.c" ""
+A2=_ "C:\Users\Administrator\Desktop\模拟5116测试\src\projects\gpio_demo\main.c" ""
+A3=_ "D:\Documents\智能车\创意\备份\武文齐2014-6-16\src\cpu\arm_cm4.c" ""
+A4=_ "D:\Documents\智能车\创意\备份\武文齐2014-6-16\src\projects\gpio_demo\isr.c" ""
+A5=_ "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_肥叉烧_2014-4-03_直立_测速_图像处理_方向\速度与激情_肥叉烧_2014-3-30 202248_直立_测速_图像处理\src\common\startup.c" "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-7_图像处理（不完善）_方向\src\common\startup.c"
+A6=_ "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-7_图像处理（不完善）_方向\src\drivers\FTM\FTM.c" "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-9_加入直到速度增加，弯道回归真长速度\src\drivers\FTM\FTM.c"
+A7=_ "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-7_图像处理（不完善）_方向\src\drivers\mcg\mcg.c" "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-9_加入直到速度增加，弯道回归真长速度\src\drivers\mcg\mcg.c"
+A8=_ "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-9_加入直到速度增加，弯道回归真长速度\src\common\startup.c" "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-9_加入直到速度增加，弯道回归真长速度（创意测试）\src\cpu\start.c"
+A9=_ "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_武文齐_2014-4-9_加入直到速度增加，弯道回归真长速度\src\drivers\wdog\wdog.c" ""
+A10=_ "D:\我的资料库\Documents\玩具车\2013年12月22日\速度与激情_肥叉烧_2014-3-17 92922_直立_测速\src\drivers\PIT\PIT.c" "D:\Documents\智能车\已看明白原理\摄像头\速度与激情_肥叉烧_2014-3-30 202248_直立_测速_图像处理\src\drivers\PIT\PIT.c"
+Count=11
+SuppressDialog=1

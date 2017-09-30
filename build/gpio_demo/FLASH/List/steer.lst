@@ -1,0 +1,592 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.60.1.5097/W32 for ARM      15/Aug/2015  19:53:06 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\s #
+#                    teer\steer.c                                             #
+#    Command line =  C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\s #
+#                    teer\steer.c -lCN C:\Users\Administrator\Desktop\MPU6050 #
+#                    8.12\build\gpio_demo\FLASH\List\ -lB                     #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\List\ -o C:\Users\Administrator\Desktop\MPU6050 #
+#                    8.12\build\gpio_demo\FLASH\Obj\ --no_cse --no_unroll     #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "D:\IAR Systems\Embedded     #
+#                    Workbench 6.5\arm\INC\c\DLib_Config_Normal.h" -I         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\ -I C:\Users\Administrator\Desktop\MPU60508.12\bui #
+#                    ld\gpio_demo\..\..\src\common\ -I                        #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\cpu\ -I C:\Users\Administrator\Desktop\MPU6 #
+#                    0508.12\build\gpio_demo\..\..\src\drivers\ -I            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\gpio\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\flash\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\olcd\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\diskio\ -I                          #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\iospi\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\wdog\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\mcg\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\flash\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\uart\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\lptmr\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\LED\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\fun\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\FTM\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\pit\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\DIPswitch\ -I                       #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\steer\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\motor\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\laser\ -I                           #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\i2c\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\ADdevice\ -I                        #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\adc\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\serial_digtal_scope\ -I             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\MMA845x\ -I                         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\exti\ -I                            #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\dma\ -I                             #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\platforms\ -I C:\Users\Administrator\Deskto #
+#                    p\MPU60508.12\build\gpio_demo\..\..\src\projects\ -I     #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\projects\gpio_demo\ -I                      #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\MPU6050\ -I                         #
+#                    C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\..\..\src\drivers\steer\ -Ol                          #
+#    List file    =  C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\List\steer.lst                                  #
+#    Object file  =  C:\Users\Administrator\Desktop\MPU60508.12\build\gpio_de #
+#                    mo\FLASH\Obj\steer.o                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\MPU60508.12\src\drivers\steer\steer.c
+      1          /*
+      2          ************************************************************************
+      3          *                北京邮电大学 K60 学习例程                                        
+      4          * 文件名 :[steer.c] 
+      5          * 描  述 ：舵机驱动函数
+      6          *设计改进：snowwolf
+      7          *  Email ：snowwolf2012@qq.com
+      8          * 说  明 ：舵机驱动函数
+      9          ***********************************************************************
+     10          */
+     11          
+     12          #include "steer.h"
+     13          #include "global.h"
+     14          #include "math.h"
+     15          
+     16          
+     17          /********************************************************************
+     18          ** 函数名称 : void steer_init() 
+     19          ** 功能描述 : 设置舵机转向
+     20          ** 入口     ：
+     21          ** 出口     ：
+     22          ** 说明     :  初始化PWM波及占空比
+     23          *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     24          void steer_init()         
+     25          {
+   \                     steer_init: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     26              ASSERT_RST(STEER_INIT_VAL <= FTM_PRECISON,"舵机0最大值不能超过PWM精度值");        
+     27              FTM_PWM_init(STEER_FTMN,STEER_FTMCH,STEER_FREQ,STEER_INIT_VAL); 
+   \   00000002   0xF44F 0x63B7      MOV      R3,#+1464
+   \   00000006   0x2264             MOVS     R2,#+100
+   \   00000008   0x2101             MOVS     R1,#+1
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0x.... 0x....      BL       FTM_PWM_init
+     28          #if STEER_DOUBLE
+     29              ASSERT_RST(STEER_INIT_VAL1 <= FTM_PRECISON,"舵机最大值不能超过PWM精度值");
+     30              FTM_PWM_init(STEER_FTMN,STEER_FTMCH1,STEER_FREQ,STEER_INIT_VAL1); 
+     31          #endif
+     32          }
+   \   00000010   0xBD01             POP      {R0,PC}          ;; return
+     33          
+     34          /********************************************************************
+     35          ** 函数名称: void PWMSetSteer(int angle_pwm) 
+     36          ** 功能描述: 设置舵机转向
+     37          ** 入口：角度值
+     38          ** 出口：
+     39          ** 说明:  
+     40          *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     41          void PWMSetSteer(int angle_pwm)         
+     42          {
+   \                     PWMSetSteer: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     43              //占空比不能超过上限（防止过压）
+     44              //同时防止方向打死  
+     45              //这个保护措施是必要的
+     46            /* if(angle_pwm<STEER_MIDDLE)
+     47             {
+     48               int p=STEER_MIDDLE-angle_pwm;
+     49               angle_pwm=STEER_MIDDLE-p*a1;
+     50             }*/
+     51              if(angle_pwm < STEER_RIGHT)
+   \   00000004   0xF240 0x500E      MOVW     R0,#+1294
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xDA01             BGE.N    ??PWMSetSteer_0
+     52                  
+     53              {
+     54                angle_pwm = STEER_RIGHT;
+   \   0000000C   0xF240 0x540E      MOVW     R4,#+1294
+     55             
+     56              }
+     57              if(angle_pwm > STEER_LEFT)
+   \                     ??PWMSetSteer_0: (+1)
+   \   00000010   0xF240 0x6063      MOVW     R0,#+1635
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xDB01             BLT.N    ??PWMSetSteer_1
+     58              {
+     59                   angle_pwm = STEER_LEFT;
+   \   00000018   0xF240 0x6462      MOVW     R4,#+1634
+     60               
+     61              }
+     62              
+     63               FTM_PWM_Duty(STEER_FTMN,STEER_FTMCH,angle_pwm);
+   \                     ??PWMSetSteer_1: (+1)
+   \   0000001C   0x0022             MOVS     R2,R4
+   \   0000001E   0x2101             MOVS     R1,#+1
+   \   00000020   0x2001             MOVS     R0,#+1
+   \   00000022   0x.... 0x....      BL       FTM_PWM_Duty
+     64              if(PID_flag)
+   \   00000026   0x....             LDR.N    R0,??DataTable0
+   \   00000028   0x7800             LDRB     R0,[R0, #+0]
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xF000 0x80D4      BEQ.W    ??PWMSetSteer_2
+     65              {
+     66               
+     67              
+     68                float angle_pp=angle_p*abs(STEER_MIDDLE-angle_pwm);
+   \   00000030   0xF5D4 0x60B7      RSBS     R0,R4,#+1464
+   \   00000034   0x.... 0x....      BL       abs
+   \   00000038   0x.... 0x....      BL       __aeabi_i2f
+   \   0000003C   0x....             LDR.N    R1,??DataTable0_1
+   \   0000003E   0x6809             LDR      R1,[R1, #+0]
+   \   00000040   0x.... 0x....      BL       __aeabi_fmul
+     69                float dev_angle=tan(angle_pp);
+   \   00000044   0x.... 0x....      BL       __aeabi_f2d
+   \   00000048   0x.... 0x....      BL       tan
+   \   0000004C   0x.... 0x....      BL       __aeabi_d2f
+   \   00000050   0x0005             MOVS     R5,R0
+     70                int chasuzhi=wanted_speed*k_chashu_speed*dev_angle;
+   \   00000052   0x....             LDR.N    R0,??DataTable0_2
+   \   00000054   0x6800             LDR      R0,[R0, #+0]
+   \   00000056   0x.... 0x....      BL       __aeabi_i2f
+   \   0000005A   0x....             LDR.N    R1,??DataTable0_3
+   \   0000005C   0x6809             LDR      R1,[R1, #+0]
+   \   0000005E   0x.... 0x....      BL       __aeabi_fmul
+   \   00000062   0x0029             MOVS     R1,R5
+   \   00000064   0x.... 0x....      BL       __aeabi_fmul
+   \   00000068   0x.... 0x....      BL       __aeabi_f2iz
+   \   0000006C   0x0005             MOVS     R5,R0
+     71                 
+     72                
+     73                 
+     74                 if(1)//普通askman模型 外侧轮子加不上速度，以内侧轮子为中心  外侧轮子速度大于25 时 内侧减速
+     75                 {
+     76                   if(abs(STEER_MIDDLE-angle_pwm)<=sep)
+   \   0000006E   0xF5D4 0x60B7      RSBS     R0,R4,#+1464
+   \   00000072   0x.... 0x....      BL       abs
+   \   00000076   0x....             LDR.N    R1,??DataTable0_4
+   \   00000078   0x6809             LDR      R1,[R1, #+0]
+   \   0000007A   0x4281             CMP      R1,R0
+   \   0000007C   0xDB08             BLT.N    ??PWMSetSteer_3
+     77                   {
+     78                     wanted_speed_L=wanted_speed;
+   \   0000007E   0x....             LDR.N    R0,??DataTable0_5
+   \   00000080   0x....             LDR.N    R1,??DataTable0_2
+   \   00000082   0x6809             LDR      R1,[R1, #+0]
+   \   00000084   0x6001             STR      R1,[R0, #+0]
+     79                     wanted_speed_R=wanted_speed;
+   \   00000086   0x....             LDR.N    R0,??DataTable0_6
+   \   00000088   0x....             LDR.N    R1,??DataTable0_2
+   \   0000008A   0x6809             LDR      R1,[R1, #+0]
+   \   0000008C   0x6001             STR      R1,[R0, #+0]
+   \   0000008E   0xE0A3             B.N      ??PWMSetSteer_2
+     80                   }
+     81                   else
+     82                   {
+     83                       if((STEER_MIDDLE-angle_pwm)<=0)//good
+   \                     ??PWMSetSteer_3: (+1)
+   \   00000090   0xF5D4 0x60B7      RSBS     R0,R4,#+1464
+   \   00000094   0x2801             CMP      R0,#+1
+   \   00000096   0xDA49             BGE.N    ??PWMSetSteer_4
+     84                      {
+     85                          wanted_speed_R=wanted_speed-chasuzhi;
+   \   00000098   0x....             LDR.N    R0,??DataTable0_2
+   \   0000009A   0x6800             LDR      R0,[R0, #+0]
+   \   0000009C   0x1B40             SUBS     R0,R0,R5
+   \   0000009E   0x....             LDR.N    R1,??DataTable0_6
+   \   000000A0   0x6008             STR      R0,[R1, #+0]
+     86                          wanted_speed_L=wanted_speed+chasuzhi;
+   \   000000A2   0x....             LDR.N    R0,??DataTable0_2
+   \   000000A4   0x6800             LDR      R0,[R0, #+0]
+   \   000000A6   0x1828             ADDS     R0,R5,R0
+   \   000000A8   0x....             LDR.N    R1,??DataTable0_5
+   \   000000AA   0x6008             STR      R0,[R1, #+0]
+     87                          if(wanted_speed_L-true_speed_L>bili&&(true_speed_L-wanted_speed_R<=wanted_speed/6))//内侧减速肯定能达到
+   \   000000AC   0x....             LDR.N    R0,??DataTable0_7
+   \   000000AE   0x6800             LDR      R0,[R0, #+0]
+   \   000000B0   0x....             LDR.N    R1,??DataTable0_5
+   \   000000B2   0x6809             LDR      R1,[R1, #+0]
+   \   000000B4   0x....             LDR.N    R2,??DataTable0_8
+   \   000000B6   0x6812             LDR      R2,[R2, #+0]
+   \   000000B8   0x1A89             SUBS     R1,R1,R2
+   \   000000BA   0x4288             CMP      R0,R1
+   \   000000BC   0xDA23             BGE.N    ??PWMSetSteer_5
+   \   000000BE   0x....             LDR.N    R0,??DataTable0_2
+   \   000000C0   0x6800             LDR      R0,[R0, #+0]
+   \   000000C2   0x2106             MOVS     R1,#+6
+   \   000000C4   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   000000C8   0x....             LDR.N    R1,??DataTable0_8
+   \   000000CA   0x6809             LDR      R1,[R1, #+0]
+   \   000000CC   0x....             LDR.N    R2,??DataTable0_6
+   \   000000CE   0x6812             LDR      R2,[R2, #+0]
+   \   000000D0   0x1A89             SUBS     R1,R1,R2
+   \   000000D2   0x4288             CMP      R0,R1
+   \   000000D4   0xDB17             BLT.N    ??PWMSetSteer_5
+     88                              wanted_speed_R=wanted_speed_R-(wanted_speed_L-true_speed_L)*integral_b;
+   \   000000D6   0x....             LDR.N    R0,??DataTable0_6
+   \   000000D8   0x6800             LDR      R0,[R0, #+0]
+   \   000000DA   0x.... 0x....      BL       __aeabi_i2f
+   \   000000DE   0x0004             MOVS     R4,R0
+   \   000000E0   0x....             LDR.N    R0,??DataTable0_5
+   \   000000E2   0x6800             LDR      R0,[R0, #+0]
+   \   000000E4   0x....             LDR.N    R1,??DataTable0_8
+   \   000000E6   0x6809             LDR      R1,[R1, #+0]
+   \   000000E8   0x1A40             SUBS     R0,R0,R1
+   \   000000EA   0x.... 0x....      BL       __aeabi_i2f
+   \   000000EE   0x....             LDR.N    R1,??DataTable0_9
+   \   000000F0   0x6809             LDR      R1,[R1, #+0]
+   \   000000F2   0x.... 0x....      BL       __aeabi_fmul
+   \   000000F6   0x0001             MOVS     R1,R0
+   \   000000F8   0x0020             MOVS     R0,R4
+   \   000000FA   0x.... 0x....      BL       __aeabi_fsub
+   \   000000FE   0x.... 0x....      BL       __aeabi_f2iz
+   \   00000102   0x....             LDR.N    R1,??DataTable0_6
+   \   00000104   0x6008             STR      R0,[R1, #+0]
+     89                              
+     90                        
+     91                          if(wanted_speed_R<=2*wanted_speed/3)
+   \                     ??PWMSetSteer_5: (+1)
+   \   00000106   0x....             LDR.N    R0,??DataTable0_2
+   \   00000108   0x6800             LDR      R0,[R0, #+0]
+   \   0000010A   0x0040             LSLS     R0,R0,#+1
+   \   0000010C   0x2103             MOVS     R1,#+3
+   \   0000010E   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   00000112   0x....             LDR.N    R1,??DataTable0_6
+   \   00000114   0x6809             LDR      R1,[R1, #+0]
+   \   00000116   0x4288             CMP      R0,R1
+   \   00000118   0xDB5E             BLT.N    ??PWMSetSteer_2
+     92                              wanted_speed_R=2*wanted_speed/3;
+   \   0000011A   0x....             LDR.N    R0,??DataTable0_2
+   \   0000011C   0x6800             LDR      R0,[R0, #+0]
+   \   0000011E   0x0040             LSLS     R0,R0,#+1
+   \   00000120   0x2103             MOVS     R1,#+3
+   \   00000122   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   00000126   0x....             LDR.N    R1,??DataTable0_6
+   \   00000128   0x6008             STR      R0,[R1, #+0]
+   \   0000012A   0xE055             B.N      ??PWMSetSteer_2
+     93                      }
+     94                       else
+     95                      {
+     96                          wanted_speed_L=wanted_speed-chasuzhi;
+   \                     ??PWMSetSteer_4: (+1)
+   \   0000012C   0x....             LDR.N    R0,??DataTable0_2
+   \   0000012E   0x6800             LDR      R0,[R0, #+0]
+   \   00000130   0x1B40             SUBS     R0,R0,R5
+   \   00000132   0x....             LDR.N    R1,??DataTable0_5
+   \   00000134   0x6008             STR      R0,[R1, #+0]
+     97                          wanted_speed_R=wanted_speed+chasuzhi;
+   \   00000136   0x....             LDR.N    R0,??DataTable0_2
+   \   00000138   0x6800             LDR      R0,[R0, #+0]
+   \   0000013A   0x1828             ADDS     R0,R5,R0
+   \   0000013C   0x....             LDR.N    R1,??DataTable0_6
+   \   0000013E   0x6008             STR      R0,[R1, #+0]
+     98                          if(wanted_speed_R-true_speed_R>bili&&(true_speed_R-wanted_speed_L<=wanted_speed/6))//内侧减速肯定能达到
+   \   00000140   0x....             LDR.N    R0,??DataTable0_7
+   \   00000142   0x6800             LDR      R0,[R0, #+0]
+   \   00000144   0x....             LDR.N    R1,??DataTable0_6
+   \   00000146   0x6809             LDR      R1,[R1, #+0]
+   \   00000148   0x....             LDR.N    R2,??DataTable0_10
+   \   0000014A   0x6812             LDR      R2,[R2, #+0]
+   \   0000014C   0x1A89             SUBS     R1,R1,R2
+   \   0000014E   0x4288             CMP      R0,R1
+   \   00000150   0xDA30             BGE.N    ??PWMSetSteer_6
+   \   00000152   0x....             LDR.N    R0,??DataTable0_2
+   \   00000154   0x6800             LDR      R0,[R0, #+0]
+   \   00000156   0x2106             MOVS     R1,#+6
+   \   00000158   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   0000015C   0x....             LDR.N    R1,??DataTable0_10
+   \   0000015E   0x6809             LDR      R1,[R1, #+0]
+   \   00000160   0x....             LDR.N    R2,??DataTable0_5
+   \   00000162   0x6812             LDR      R2,[R2, #+0]
+   \   00000164   0x1A89             SUBS     R1,R1,R2
+   \   00000166   0x4288             CMP      R0,R1
+   \   00000168   0xDB24             BLT.N    ??PWMSetSteer_6
+     99                              wanted_speed_L=wanted_speed_L-(wanted_speed_R-true_speed_R)*(integral_b+0.1);
+   \   0000016A   0x....             LDR.N    R0,??DataTable0_5
+   \   0000016C   0x6800             LDR      R0,[R0, #+0]
+   \   0000016E   0x.... 0x....      BL       __aeabi_i2d
+   \   00000172   0x0006             MOVS     R6,R0
+   \   00000174   0x000F             MOVS     R7,R1
+   \   00000176   0x....             LDR.N    R0,??DataTable0_6
+   \   00000178   0x6800             LDR      R0,[R0, #+0]
+   \   0000017A   0x....             LDR.N    R1,??DataTable0_10
+   \   0000017C   0x6809             LDR      R1,[R1, #+0]
+   \   0000017E   0x1A40             SUBS     R0,R0,R1
+   \   00000180   0x.... 0x....      BL       __aeabi_i2d
+   \   00000184   0x0004             MOVS     R4,R0
+   \   00000186   0x000D             MOVS     R5,R1
+   \   00000188   0x....             LDR.N    R0,??DataTable0_9
+   \   0000018A   0x6800             LDR      R0,[R0, #+0]
+   \   0000018C   0x.... 0x....      BL       __aeabi_f2d
+   \   00000190   0x....             LDR.N    R2,??DataTable0_11  ;; 0x9999999a
+   \   00000192   0x....             LDR.N    R3,??DataTable0_12  ;; 0x3fb99999
+   \   00000194   0x.... 0x....      BL       __aeabi_dadd
+   \   00000198   0x0022             MOVS     R2,R4
+   \   0000019A   0x002B             MOVS     R3,R5
+   \   0000019C   0x.... 0x....      BL       __aeabi_dmul
+   \   000001A0   0x0002             MOVS     R2,R0
+   \   000001A2   0x000B             MOVS     R3,R1
+   \   000001A4   0x0030             MOVS     R0,R6
+   \   000001A6   0x0039             MOVS     R1,R7
+   \   000001A8   0x.... 0x....      BL       __aeabi_dsub
+   \   000001AC   0x.... 0x....      BL       __aeabi_d2iz
+   \   000001B0   0x....             LDR.N    R1,??DataTable0_5
+   \   000001B2   0x6008             STR      R0,[R1, #+0]
+    100                          if(wanted_speed_L<=2*wanted_speed/3)
+   \                     ??PWMSetSteer_6: (+1)
+   \   000001B4   0x....             LDR.N    R0,??DataTable0_2
+   \   000001B6   0x6800             LDR      R0,[R0, #+0]
+   \   000001B8   0x0040             LSLS     R0,R0,#+1
+   \   000001BA   0x2103             MOVS     R1,#+3
+   \   000001BC   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   000001C0   0x....             LDR.N    R1,??DataTable0_5
+   \   000001C2   0x6809             LDR      R1,[R1, #+0]
+   \   000001C4   0x4288             CMP      R0,R1
+   \   000001C6   0xDB07             BLT.N    ??PWMSetSteer_2
+    101                              wanted_speed_L=2*wanted_speed/3;
+   \   000001C8   0x....             LDR.N    R0,??DataTable0_2
+   \   000001CA   0x6800             LDR      R0,[R0, #+0]
+   \   000001CC   0x0040             LSLS     R0,R0,#+1
+   \   000001CE   0x2103             MOVS     R1,#+3
+   \   000001D0   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   000001D4   0x....             LDR.N    R1,??DataTable0_5
+   \   000001D6   0x6008             STR      R0,[R1, #+0]
+    102                      }
+    103                   }
+    104                 }
+    105               
+    106              }
+    107           
+    108          
+    109          
+    110          }
+   \                     ??PWMSetSteer_2: (+1)
+   \   000001D8   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    111          
+    112          
+    113          /********************************************************************
+    114          ** 函数名称: steerCtrl
+    115          ** 功能描述: 速度控制算法
+    116          ** 入口：
+    117          ** 出口：
+    118          ** 说明:  
+    119          *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    120          void steerCtrl()
+    121          {
+    122              /*
+    123              int angle_pwm;
+    124              angle_pwm = 0;    //去除warning
+    125              
+    126              //自己的舵机控制算法
+    127              
+    128              
+    129              PWMSetSteer(angle_pwm) ; 
+    130              */ 
+    131          }
+   \                     steerCtrl: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     PID_flag
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   0x........         DC32     angle_p
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_2:
+   \   00000000   0x........         DC32     wanted_speed
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_3:
+   \   00000000   0x........         DC32     k_chashu_speed
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_4:
+   \   00000000   0x........         DC32     sep
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_5:
+   \   00000000   0x........         DC32     wanted_speed_L
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_6:
+   \   00000000   0x........         DC32     wanted_speed_R
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_7:
+   \   00000000   0x........         DC32     bili
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_8:
+   \   00000000   0x........         DC32     true_speed_L
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_9:
+   \   00000000   0x........         DC32     integral_b
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_10:
+   \   00000000   0x........         DC32     true_speed_R
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_11:
+   \   00000000   0x9999999A         DC32     0x9999999a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_12:
+   \   00000000   0x3FB99999         DC32     0x3fb99999
+    132          
+    133          
+    134          #if STEER_DOUBLE
+    135          void PWMSetSteer1(int angle_pwm)         
+    136          {
+    137              //占空比不能超过上限（防止过压）
+    138              //同时防止方向打死  
+    139              //这个保护措施是必要的
+    140              if(angle_pwm < STEER_RIGHT1)
+    141                   angle_pwm = STEER_RIGHT1;
+    142              if(angle_pwm > STEER_LEFT1)
+    143                   angle_pwm = STEER_LEFT1;
+    144              
+    145              
+    146              FTM_PWM_Duty(STEER_FTMN,STEER_FTMCH1,angle_pwm);
+    147          }
+    148          
+    149          
+    150          /********************************************************************
+    151          ** 函数名称: steerCtrl
+    152          ** 功能描述: 速度控制算法
+    153          ** 入口：
+    154          ** 出口：
+    155          ** 说明:  
+    156          *********************************************************************/
+    157          void steerCtrl1()
+    158          {
+    159              /*
+    160              int angle_pwm;
+    161              angle_pwm = 0;    //去除warning
+    162              
+    163              //自己的舵机控制算法
+    164              
+    165              
+    166              
+    167              PWMSetSteer1(angle_pwm) ;  
+    168              */
+    169          }
+    170          
+    171          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   PWMSetSteer
+        24   -> FTM_PWM_Duty
+        24   -> __aeabi_d2f
+        24   -> __aeabi_d2iz
+        24   -> __aeabi_dadd
+        24   -> __aeabi_dmul
+        24   -> __aeabi_dsub
+        24   -> __aeabi_f2d
+        24   -> __aeabi_f2iz
+        24   -> __aeabi_fmul
+        24   -> __aeabi_fsub
+        24   -> __aeabi_i2d
+        24   -> __aeabi_i2f
+        24   -> abs
+        24   -> tan
+       0   steerCtrl
+       8   steer_init
+         8   -> FTM_PWM_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       4  ??DataTable0_10
+       4  ??DataTable0_11
+       4  ??DataTable0_12
+       4  ??DataTable0_2
+       4  ??DataTable0_3
+       4  ??DataTable0_4
+       4  ??DataTable0_5
+       4  ??DataTable0_6
+       4  ??DataTable0_7
+       4  ??DataTable0_8
+       4  ??DataTable0_9
+     474  PWMSetSteer
+       2  steerCtrl
+      18  steer_init
+
+ 
+ 546 bytes in section .text
+ 
+ 546 bytes of CODE memory
+
+Errors: none
+Warnings: 3

@@ -1,0 +1,360 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     22/Dec/2013  00:56:38 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\src\projects\gpio_demo\main.c                      #
+#    Command line =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\src\projects\gpio_demo\main.c -lCN                 #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\List\ -lB                      #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\List\ -o                       #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\Obj\ --no_cse --no_unroll      #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "E:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.0\arm\INC\c\DLib_Config_Nor #
+#                    mal.h" -I C:\Users\Administrator\Desktop\杨向军的K60模板 #
+#                    _只有基本IO操作\build\gpio_demo\..\ -I                   #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\common\ -I               #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\cpu\ -I                  #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\ -I              #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\gpio\ -I         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\wdog\ -I         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\mcg\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\uart\ -I         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\lptmr\ -I        #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\fun\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\led\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\i2c\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\MMA845x\ -I      #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\motor\ -I        #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\pit\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\steer\ -I        #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\ftm\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\DIPswitch\ -I    #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\dma\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\platforms\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\projects\ -I             #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\projects\gpio_demo\ -Ol  #
+#    List file    =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\List\main.lst                  #
+#    Object file  =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\Obj\main.o                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本IO操作\src\projects\gpio_demo\main.c
+      1          /*******************************************************************************
+      2                                        北京邮电大学 K60 学习例程
+      3          【例程名称】GPIO例程
+      4          【Designed】snowwolf
+      5          【E-mail  】snowwolf20125@qq.com
+      6          【软件版本】V1.0
+      7          【最后更新】2012年3月24日
+      8          ------------------------------------------------
+      9          【dev.env.】IAR 6.3
+     10          【Target  】K60X256
+     11          【Crystal 】50.000Mhz
+     12          【busclock】48.000MHz
+     13          【pllclock】96.000MHz   
+     14          【 说  明 】仅做内部学习使用，请务外传
+     15          【 参  考 】野火嵌入式开发工作室
+     16                      龙丘开发例程
+     17                      苏州大学《嵌入式系统原理与实践》
+     18          ********************************************************************************/	
+     19          
+     20          
+     21          
+     22          #include "common.h"
+     23          #include "include.h"
+     24          
+     25          
+     26          #if 0   
+     27          
+     28          #else
+     29          /*
+     30          ************************************************************************
+     31          *  实验说明：Test 8451 IIC
+     32          *  实验操作：无
+     33          *  实验效果：
+     34          *
+     35          *  实验目的：Test 8451 IIC initializing, reading and writing.
+     36          *  修改时间：2013-12-21
+     37          *  备    注：
+     38          * 接口说明：
+     39                   拨码开关：PA14    PA15    PA16    PA17
+     40                    电机    ：PC1     PC2     PC3     PC4
+     41                    串口    ：PB16    PB17  波特率 115200  收不到信号可以把收发反转一个
+     42                    MMA845x : PC10 - I2C1_SCL     PC11 - I2C1_SDA 
+     43          
+     44          *  参    考：野火Kinetis开发例程
+     45          ***********************************************************************
+     46          */
+
+   \                                 In section .text, align 4, keep-with-next
+     47          void  main(void)
+     48          {
+   \                     main:
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     49           DisableInterrupts;  
+   \   00000002   0xB672             CPSID i         
+     50            
+     51            uartPrintf("北京邮电大学速度与激情例程\n");
+   \   00000004   0x4830             LDR.N    R0,??main_0
+   \   00000006   0x.... 0x....      BL       uartPrintf
+     52            
+     53            gpio_init  (PORTA,15,GPO,HIGH);         //核心板测试LED，初始化 PTA15 ：输出高电平 ,即 初始化 LED0，灭
+   \   0000000A   0x2301             MOVS     R3,#+1
+   \   0000000C   0x2201             MOVS     R2,#+1
+   \   0000000E   0x210F             MOVS     R1,#+15
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0x.... 0x....      BL       gpio_init
+     54            gpio_init  (PORTA,4,GPO,HIGH);          //主板测试LED    初始化 PTA4 ： 输出高电平 ,即 初始化 LED0，灭
+   \   00000016   0x2301             MOVS     R3,#+1
+   \   00000018   0x2201             MOVS     R2,#+1
+   \   0000001A   0x2104             MOVS     R1,#+4
+   \   0000001C   0x2000             MOVS     R0,#+0
+   \   0000001E   0x.... 0x....      BL       gpio_init
+     55            
+     56              //初始化845x
+     57            MMA845x_Init();
+   \   00000022   0x.... 0x....      BL       MMA845x_Init
+     58            
+     59            //打开串口中断
+     60            UART_IRQ_EN(UART0); 
+   \   00000026   0x4829             LDR.N    R0,??main_0+0x4
+   \   00000028   0x6800             LDR      R0,[R0, #+0]
+   \   0000002A   0x78C0             LDRB     R0,[R0, #+3]
+   \   0000002C   0xF050 0x0020      ORRS     R0,R0,#0x20
+   \   00000030   0x4926             LDR.N    R1,??main_0+0x4
+   \   00000032   0x6809             LDR      R1,[R1, #+0]
+   \   00000034   0x70C8             STRB     R0,[R1, #+3]
+   \   00000036   0x202D             MOVS     R0,#+45
+   \   00000038   0x.... 0x....      BL       enable_irq
+     61            EnableInterrupts;    
+   \   0000003C   0xB662             CPSIE i         
+     62          
+     63            u16 x8,x10,x12;
+     64            u16 y8,y10,y12;
+     65            u16 z8,z10,z12;
+     66            uartPrintf("\n----------X-------------------Y-------------------Z----------\n"); 
+   \   0000003E   0x4824             LDR.N    R0,??main_0+0x8
+   \   00000040   0x.... 0x....      BL       uartPrintf
+     67            while(1){
+     68                x8 = Get845xX_8bit(10); x10 = Get845xX_10bit(10);x12 = Get845xX_12bit(10); 
+   \                     ??main_1:
+   \   00000044   0x200A             MOVS     R0,#+10
+   \   00000046   0x.... 0x....      BL       Get845xX_8bit
+   \   0000004A   0x0004             MOVS     R4,R0
+   \   0000004C   0x200A             MOVS     R0,#+10
+   \   0000004E   0x.... 0x....      BL       Get845xX_10bit
+   \   00000052   0x0005             MOVS     R5,R0
+   \   00000054   0x200A             MOVS     R0,#+10
+   \   00000056   0x.... 0x....      BL       Get845xX_12bit
+     69                uartPrintf("%5d%6d%7d  ",x8,x10,x12);
+   \   0000005A   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000005C   0x0003             MOVS     R3,R0
+   \   0000005E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000060   0x002A             MOVS     R2,R5
+   \   00000062   0xB2A4             UXTH     R4,R4            ;; ZeroExt  R4,R4,#+16,#+16
+   \   00000064   0x0021             MOVS     R1,R4
+   \   00000066   0x481B             LDR.N    R0,??main_0+0xC
+   \   00000068   0x.... 0x....      BL       uartPrintf
+     70                
+     71                y8 = Get845xY_8bit(10); y10 = Get845xY_10bit(10);y12 = Get845xY_12bit(10); 
+   \   0000006C   0x200A             MOVS     R0,#+10
+   \   0000006E   0x.... 0x....      BL       Get845xY_8bit
+   \   00000072   0x0004             MOVS     R4,R0
+   \   00000074   0x200A             MOVS     R0,#+10
+   \   00000076   0x.... 0x....      BL       Get845xY_10bit
+   \   0000007A   0x0005             MOVS     R5,R0
+   \   0000007C   0x200A             MOVS     R0,#+10
+   \   0000007E   0x.... 0x....      BL       Get845xY_12bit
+     72                uartPrintf("%5d%6d%7d  ",y8,y10,y12);
+   \   00000082   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000084   0x0003             MOVS     R3,R0
+   \   00000086   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000088   0x002A             MOVS     R2,R5
+   \   0000008A   0xB2A4             UXTH     R4,R4            ;; ZeroExt  R4,R4,#+16,#+16
+   \   0000008C   0x0021             MOVS     R1,R4
+   \   0000008E   0x4811             LDR.N    R0,??main_0+0xC
+   \   00000090   0x.... 0x....      BL       uartPrintf
+     73                
+     74                z8 = Get845xZ_8bit(10); z10 = Get845xZ_10bit(10);z12 = Get845xZ_12bit(10); 
+   \   00000094   0x200A             MOVS     R0,#+10
+   \   00000096   0x.... 0x....      BL       Get845xZ_8bit
+   \   0000009A   0x0004             MOVS     R4,R0
+   \   0000009C   0x200A             MOVS     R0,#+10
+   \   0000009E   0x.... 0x....      BL       Get845xZ_10bit
+   \   000000A2   0x0005             MOVS     R5,R0
+   \   000000A4   0x200A             MOVS     R0,#+10
+   \   000000A6   0x.... 0x....      BL       Get845xZ_12bit
+     75                uartPrintf("%5d%6d%7d\n",z8,z10,z12);
+   \   000000AA   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   000000AC   0x0003             MOVS     R3,R0
+   \   000000AE   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   000000B0   0x002A             MOVS     R2,R5
+   \   000000B2   0xB2A4             UXTH     R4,R4            ;; ZeroExt  R4,R4,#+16,#+16
+   \   000000B4   0x0021             MOVS     R1,R4
+   \   000000B6   0x4808             LDR.N    R0,??main_0+0x10
+   \   000000B8   0x.... 0x....      BL       uartPrintf
+     76                
+     77                delayms(1000);     //延时1s
+   \   000000BC   0xF44F 0x707A      MOV      R0,#+1000
+   \   000000C0   0x.... 0x....      BL       delayms
+   \   000000C4   0xE7BE             B.N      ??main_1
+   \   000000C6   0xBF00             Nop      
+   \                     ??main_0:
+   \   000000C8   0x........         DC32     `?<Constant "\\261\\261\\276\\251\\323\\312\\265\\347\\2`
+   \   000000CC   0x........         DC32     UARTx
+   \   000000D0   0x........         DC32     `?<Constant "\\n----------X---------...">`
+   \   000000D4   0x........         DC32     `?<Constant "%5d%6d%7d  ">`
+   \   000000D8   0x........         DC32     `?<Constant "%5d%6d%7d\\n">`
+     78            }
+     79          }
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "\\261\\261\\276\\251\\323\\312\\265\\347\\2`:
+   \   00000000   0xB1 0xB1          DC8 "\261\261\276\251\323\312\265\347\264\363\321\247\313\331\266\310\323\353\274\244\307\351\300\375\263\314\012"
+   \              0xBE 0xA9    
+   \              0xD3 0xCA    
+   \              0xB5 0xE7    
+   \              0xB4 0xF3    
+   \              0xD1 0xA7    
+   \              0xCB 0xD9    
+   \              0xB6 0xC8    
+   \              0xD3 0xEB    
+   \              0xBC 0xA4    
+   \              0xC7 0xE9    
+   \              0xC0 0xFD    
+   \              0xB3 0xCC    
+   \              0x0A 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "\\n----------X---------...">`:
+   \   00000000   0x0A 0x2D          DC8 0AH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \   00000008   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 58H, 2DH, 2DH, 2DH, 2DH
+   \              0x2D 0x58    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \   00000010   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \   00000018   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 59H
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x59    
+   \   00000020   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \   00000028   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 2DH
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \   00000030   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 5AH, 2DH, 2DH, 2DH, 2DH
+   \              0x2D 0x5A    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \   00000038   0x2D 0x2D          DC8 2DH, 2DH, 2DH, 2DH, 2DH, 2DH, 0AH, 0
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x0A 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "%5d%6d%7d  ">`:
+   \   00000000   0x25 0x35          DC8 "%5d%6d%7d  "
+   \              0x64 0x25    
+   \              0x36 0x64    
+   \              0x25 0x37    
+   \              0x64 0x20    
+   \              0x20 0x00    
+
+   \                                 In section .rodata, align 4
+   \                     `?<Constant "%5d%6d%7d\\n">`:
+   \   00000000   0x25 0x35          DC8 "%5d%6d%7d\012"
+   \              0x64 0x25    
+   \              0x36 0x64    
+   \              0x25 0x37    
+   \              0x64 0x0A    
+   \              0x00         
+   \   0000000B   0x00               DC8 0
+     80          
+     81          #endif
+     82          
+     83          
+     84          
+     85          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       16  main
+             16 -> Get845xX_10bit
+             16 -> Get845xX_12bit
+             16 -> Get845xX_8bit
+             16 -> Get845xY_10bit
+             16 -> Get845xY_12bit
+             16 -> Get845xY_8bit
+             16 -> Get845xZ_10bit
+             16 -> Get845xZ_12bit
+             16 -> Get845xZ_8bit
+             16 -> MMA845x_Init
+             16 -> delayms
+             16 -> enable_irq
+             16 -> gpio_init
+             16 -> uartPrintf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?<Constant "%5d%6d%7d  ">
+      12  ?<Constant "%5d%6d%7d\n">
+      28  ?<Constant "\261\261\276\251\323\312\265\347\2
+      64  ?<Constant "\n----------X---------...">
+     220  main
+
+ 
+ 116 bytes in section .rodata
+ 220 bytes in section .text
+ 
+ 220 bytes of CODE  memory
+ 116 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,289 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     22/Dec/2013  00:55:21 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\src\drivers\fun\fun.c                              #
+#    Command line =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\src\drivers\fun\fun.c -lCN                         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\List\ -lB                      #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\List\ -o                       #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\Obj\ --no_cse --no_unroll      #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M4  #
+#                    -e --fpu=None --dlib_config "E:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.0\arm\INC\c\DLib_Config_Nor #
+#                    mal.h" -I C:\Users\Administrator\Desktop\杨向军的K60模板 #
+#                    _只有基本IO操作\build\gpio_demo\..\ -I                   #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\common\ -I               #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\cpu\ -I                  #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\ -I              #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\gpio\ -I         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\wdog\ -I         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\mcg\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\uart\ -I         #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\lptmr\ -I        #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\fun\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\led\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\i2c\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\MMA845x\ -I      #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\motor\ -I        #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\pit\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\steer\ -I        #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\ftm\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\DIPswitch\ -I    #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\drivers\dma\ -I          #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\platforms\ -I            #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\projects\ -I             #
+#                    C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\..\..\src\projects\gpio_demo\ -Ol  #
+#    List file    =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\List\fun.lst                   #
+#    Object file  =  C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本I #
+#                    O操作\build\gpio_demo\RAM\Obj\fun.o                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\杨向军的K60模板_只有基本IO操作\src\drivers\fun\fun.c
+      1          /*
+      2          ************************************************************************
+      3          *                北京邮电大学 K60 学习例程                                        
+      4          * 文件名 :[fun.c] 
+      5          * 描  述 ：基本功能函数
+      6          *设计改进：snowwolf
+      7          *  Email ：snowwolf2012@qq.com
+      8          * 说  明 ：基本功能函数
+      9          ***********************************************************************
+     10          */
+     11          #include  "fun.h"
+     12          
+     13          
+     14          /*************************************************************************
+     15          *  函数名称：delay
+     16          *  功能说明：延时函数
+     17          *  参数说明：无
+     18          *  函数返回：无
+     19          *  修改时间：2012-2-1    已测试
+     20          *  备    注：
+     21          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     22          void  delay(void)
+     23          {
+   \                     delay:
+   \   00000000   0xB580             PUSH     {R7,LR}
+     24              delayms(500);
+   \   00000002   0xF44F 0x70FA      MOV      R0,#+500
+   \   00000006   0x.... 0x....      BL       delayms
+     25          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+     26          
+     27          /*************************************************************************
+     28          *  函数名称：delayms
+     29          *  功能说明：延时函数毫秒  微秒
+     30          *  参数说明：无
+     31          *  函数返回：无
+     32          *  修改时间：2012-2-1    已测试
+     33          *  备    注：
+     34          *************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     35          void  delayms(uint32  ms)
+     36          {
+     37          
+     38              uint32  i,j;
+     39              for(i=0;i<ms;i++)
+   \                     delayms:
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0xE003             B.N      ??delayms_0
+     40              {
+     41                  for(j=core_clk_khz/4;j>0;j--)
+   \                     ??delayms_1:
+   \   00000004   0x1E52             SUBS     R2,R2,#+1
+   \                     ??delayms_2:
+   \   00000006   0x2A00             CMP      R2,#+0
+   \   00000008   0xD1FC             BNE.N    ??delayms_1
+   \   0000000A   0x1C49             ADDS     R1,R1,#+1
+   \                     ??delayms_0:
+   \   0000000C   0x4281             CMP      R1,R0
+   \   0000000E   0xD203             BCS.N    ??delayms_3
+   \   00000010   0x....             LDR.N    R2,??DataTable1
+   \   00000012   0x6812             LDR      R2,[R2, #+0]
+   \   00000014   0x0892             LSRS     R2,R2,#+2
+   \   00000016   0xE7F6             B.N      ??delayms_2
+     42                  {
+     43                  }
+     44              }
+     45          }
+   \                     ??delayms_3:
+   \   00000018   0x4770             BX       LR               ;; return
+     46          
+
+   \                                 In section .text, align 2, keep-with-next
+     47          void  delayus(uint32  us)
+     48          {
+     49              uint32  i,j;
+     50              for(i=0;i<us;i++)
+   \                     delayus:
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0xE003             B.N      ??delayus_0
+     51              {
+     52                  for(j=core_clk_mhz/4;j>0;j--)
+   \                     ??delayus_1:
+   \   00000004   0x1E52             SUBS     R2,R2,#+1
+   \                     ??delayus_2:
+   \   00000006   0x2A00             CMP      R2,#+0
+   \   00000008   0xD1FC             BNE.N    ??delayus_1
+   \   0000000A   0x1C49             ADDS     R1,R1,#+1
+   \                     ??delayus_0:
+   \   0000000C   0x4281             CMP      R1,R0
+   \   0000000E   0xD203             BCS.N    ??delayus_3
+   \   00000010   0x....             LDR.N    R2,??DataTable1_1
+   \   00000012   0x6812             LDR      R2,[R2, #+0]
+   \   00000014   0x0892             LSRS     R2,R2,#+2
+   \   00000016   0xE7F6             B.N      ??delayus_2
+     53                  {
+     54                  }
+     55              }
+     56          }
+   \                     ??delayus_3:
+   \   00000018   0x4770             BX       LR               ;; return
+     57          
+
+   \                                 In section .text, align 2, keep-with-next
+     58          signed int get_mid(signed int a,signed int b,signed int c)
+     59          {   
+     60              unsigned int x=0;
+   \                     get_mid:
+   \   00000000   0x2300             MOVS     R3,#+0
+     61              if(a>b){x=b;b=a;a=x;}
+   \   00000002   0x4281             CMP      R1,R0
+   \   00000004   0xDA02             BGE.N    ??get_mid_0
+   \   00000006   0x000B             MOVS     R3,R1
+   \   00000008   0x0001             MOVS     R1,R0
+   \   0000000A   0x0018             MOVS     R0,R3
+     62              if(b>c){x=c;c=b;b=x;}
+   \                     ??get_mid_0:
+   \   0000000C   0x428A             CMP      R2,R1
+   \   0000000E   0xDA02             BGE.N    ??get_mid_1
+   \   00000010   0x0013             MOVS     R3,R2
+   \   00000012   0x000A             MOVS     R2,R1
+   \   00000014   0x0019             MOVS     R1,R3
+     63              if(a>b){x=b;b=a;a=x;}
+   \                     ??get_mid_1:
+   \   00000016   0x4281             CMP      R1,R0
+   \   00000018   0xDA02             BGE.N    ??get_mid_2
+   \   0000001A   0x000B             MOVS     R3,R1
+   \   0000001C   0x0001             MOVS     R1,R0
+   \   0000001E   0x0018             MOVS     R0,R3
+     64              return b ;
+   \                     ??get_mid_2:
+   \   00000020   0x0008             MOVS     R0,R1
+   \   00000022   0x4770             BX       LR               ;; return
+     65          }
+
+   \                                 In section .text, align 2, keep-with-next
+     66          unsigned char get_mid8(unsigned char a,unsigned char b,unsigned char c)
+     67          {   
+     68              unsigned char x=0;
+   \                     get_mid8:
+   \   00000000   0x2300             MOVS     R3,#+0
+     69              if(a>b){x=b;b=a;a=x;}
+   \   00000002   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000004   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000006   0x4281             CMP      R1,R0
+   \   00000008   0xD202             BCS.N    ??get_mid8_0
+   \   0000000A   0x000B             MOVS     R3,R1
+   \   0000000C   0x0001             MOVS     R1,R0
+   \   0000000E   0x0018             MOVS     R0,R3
+     70              if(b>c){x=c;c=b;b=x;}
+   \                     ??get_mid8_0:
+   \   00000010   0xB2D2             UXTB     R2,R2            ;; ZeroExt  R2,R2,#+24,#+24
+   \   00000012   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000014   0x428A             CMP      R2,R1
+   \   00000016   0xD202             BCS.N    ??get_mid8_1
+   \   00000018   0x0013             MOVS     R3,R2
+   \   0000001A   0x000A             MOVS     R2,R1
+   \   0000001C   0x0019             MOVS     R1,R3
+     71              if(a>b){x=b;b=a;a=x;}
+   \                     ??get_mid8_1:
+   \   0000001E   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000020   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000022   0x4281             CMP      R1,R0
+   \   00000024   0xD202             BCS.N    ??get_mid8_2
+   \   00000026   0x000B             MOVS     R3,R1
+   \   00000028   0x0001             MOVS     R1,R0
+   \   0000002A   0x0018             MOVS     R0,R3
+     72              return b ;
+   \                     ??get_mid8_2:
+   \   0000002C   0x0008             MOVS     R0,R1
+   \   0000002E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000030   0x4770             BX       LR               ;; return
+     73          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     core_clk_khz
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x........         DC32     core_clk_mhz
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+        8  delay
+             8 -> delayms
+        0  delayms
+        0  delayus
+        0  get_mid
+        0  get_mid8
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+      12  delay
+      26  delayms
+      26  delayus
+      36  get_mid
+      50  get_mid8
+
+ 
+ 158 bytes in section .text
+ 
+ 158 bytes of CODE memory
+
+Errors: none
+Warnings: none
